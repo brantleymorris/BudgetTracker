@@ -10,6 +10,7 @@ const config = {
     },
     // this will need to be changed to production later
     mode: "development",
+    // update with colors
     plugins: [new WebpackPwaManifest({
         filename: "manifest.json",
         fingerprints: false,
