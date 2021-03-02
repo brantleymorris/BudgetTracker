@@ -3,10 +3,13 @@ const path = require("path");
 
 const config = {
     // double check the routes
-    entry: "./public/index.js",
+    entry: {
+        app: "./public/index.js",
+        db: "./public/db.js"
+    },
     output: {
         path: __dirname + "/public/dist",
-        filename: "bundle.js"
+        filename: "[name].bundle.js"
     },
     // this will need to be changed to production later
     mode: "development",
@@ -17,8 +20,8 @@ const config = {
         inject: false,
         name: "Budget Tracker",
         shortname: "Budget Tracker",
-        theme_color: "",
-        background_color: "",
+        theme_color: "#ffffff",
+        background_color: "#ffffff",
         start_url: "/",
         display: "standalone",
         icons: [{
