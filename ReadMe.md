@@ -1,0 +1,1 @@
+mongodb+srv://root:OS8MxKEQJYoEjL2I@cluster0.7vtbf.mongodb.net/budget?retryWrites=true&w=majority
